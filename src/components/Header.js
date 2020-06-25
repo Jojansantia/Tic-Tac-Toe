@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Header = () => {
+    
     return ( 
         <>
             <div className="mt-5 mb-2  w-full text-center justify-around">
@@ -8,6 +9,7 @@ const Header = () => {
             </div>
         </>
     );
+
 }
  
 export default Header;
