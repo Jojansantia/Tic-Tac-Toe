@@ -9,7 +9,6 @@ const Juego = () => {
     const [imagen, cambiarimg] = useState("1");
     const [ posiciones, guardarPosiciones ] = useState([0,1,2,3,4,5,6,7,8,9]);
     const [ creardatos, guardarCrearDatos ] = useState(false);
-    const [ estado, cambiarEstado ] = useState(true);
     if(img){
         if(imagen === "1"){
             cambiarimg("2")
@@ -43,7 +42,6 @@ const Juego = () => {
                     'Has logrado hacer 3 en raya!',
                     'success'
                 );
-                cambiarEstado(false)
                 guardarPosiciones([0,1,2,3,4,5,6,7,8,9])
                 cambiarimg("1")
         }
