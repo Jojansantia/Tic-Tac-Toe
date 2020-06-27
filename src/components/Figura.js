@@ -17,6 +17,7 @@ const Figura = ({posiciones, letra, turno, cambiarImagen}) => {
             cambiarImagen(true)
         }
       }
+      //d
       
     return ( 
         <>
@@ -24,11 +25,11 @@ const Figura = ({posiciones, letra, turno, cambiarImagen}) => {
                 {
                     (letra === "x" || letra === "o" ) ? 
                         (letra === "x") ? 
-                            <img src={equis} className="h-40 w-full"  alt=""  /> 
+                            <img src={equis} className="h-32 w-full"  alt=""  /> 
                         : 
-                            <img src={circle} className="h-40 w-full"  alt=""  />
+                            <img src={circle} className="h-32 w-full"  alt=""  />
                     :
-                        <p className="h-40  bg-white border-black"></p>
+                        <p className="h-32 bg-white "></p>
                 }
             </button>
         </>
