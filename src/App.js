@@ -6,7 +6,7 @@ function App() {
 
   return(
     <>
-      <div className="my-5 mx-5 md:mx-auto md:w-3/5">
+      <div className="my-5 mx-10 md:mx-auto md:w-3/5">
         <Header/>
         <Juego/>
       </div>

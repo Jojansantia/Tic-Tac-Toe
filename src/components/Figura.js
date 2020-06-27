@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import equis from '../img/equis.jpg';
-import circle from '../img/circle.jpg';
+import equis from '../img/equis.png';
+import circle from '../img/circle.png';
 
 const Figura = ({posiciones, letra, turno, cambiarImagen}) => {
 
@@ -20,15 +20,15 @@ const Figura = ({posiciones, letra, turno, cambiarImagen}) => {
       
     return ( 
         <>
-            <button className=" w-1/4 m-2  cursor-pointer focus:outline-none" value={letra} onClick={handleClick}>
+            <button className="" value={letra} onClick={handleClick}>
                 {
                     (letra === "x" || letra === "o" ) ? 
                         (letra === "x") ? 
-                            <img src={equis} className=" h-24 w-full "  alt=""  /> 
+                            <img src={equis} className="h-40 w-full"  alt=""  /> 
                         : 
-                            <img src={circle} className=" h-24 w-full "  alt=""  />
+                            <img src={circle} className="h-40 w-full"  alt=""  />
                     :
-                        <p className="h-24 border-2"></p>
+                        <p className="h-40  bg-white border-black"></p>
                 }
             </button>
         </>

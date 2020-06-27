@@ -42,21 +42,21 @@ const Juego = () => {
                     'success'
                 );
                 reiniciar()
-            }, 500);
+            }, 200);
     }else if(empate){
         setTimeout(() => {
             Swal.fire(
                 'Oops...',
-                'Parece que ha habido un empate.',
+                'No se ha logrado el objetivo.',
                 'error'
             );
             reiniciar()
-        }, 500);
+        }, 200);
     }
 
     return ( 
         <>
-            <div className="text-center">
+            <div className="bg-black grid grid-rows-3 grid-flow-col gap-4">
                 {
                     posiciones.map( (letra,i) => (
                         <Figura 
